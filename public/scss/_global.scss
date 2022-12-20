@@ -1,0 +1,36 @@
+body {
+    font-size: 16px;
+    line-height: 1;
+    background-color: $background-primary;
+    color: $text-primary;
+    font-family: 'SVN-Gilroy', sans-serif;
+}
+
+.container {
+    max-width: 1130px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 11px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: $transition-primary;
+
+    &.btn-primary {
+        font-weight: 600;
+        color: #fff;
+        background-color: $color-primary;
+
+        &:hover {
+            transform: translateY(-6px);
+            background-color: $color-active;
+            color: $color-primary;
+        }
+    }
+}

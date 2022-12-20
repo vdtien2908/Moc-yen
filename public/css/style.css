@@ -1,0 +1,287 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: "Bodoni-BoldCondensed";
+  src: url("../fonts/") format("woff2"), url("../fonts/Bodoni-BoldCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyBlackItalic.woff2") format("woff2"), url("../fonts/SVN-GilroyBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyBlack.woff2") format("woff2"), url("../fonts/SVN-GilroyBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bodoni";
+  src: url("../fonts/Bodoni.woff2") format("woff2"), url("../fonts/Bodoni.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bodoni-PosterCompressed";
+  src: url("../fonts/Bodoni-PosterCompressed-Bold.woff2") format("woff2"), url("../fonts/Bodoni-PosterCompressed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bodoni";
+  src: url("../fonts/Bodoni-ExtraBold-Bold.woff2") format("woff2"), url("../fonts/Bodoni-ExtraBold-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyBoldItalic.woff2") format("woff2"), url("../fonts/SVN-GilroyBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyItalic.woff2") format("woff2"), url("../fonts/SVN-GilroyItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyHeavy.woff2") format("woff2"), url("../fonts/SVN-GilroyHeavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyHeavyItalic.woff2") format("woff2"), url("../fonts/SVN-GilroyHeavyItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyLightItalic.woff2") format("woff2"), url("../fonts/SVN-GilroyLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyBold.woff2") format("woff2"), url("../fonts/SVN-GilroyBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyLight.woff2") format("woff2"), url("../fonts/SVN-GilroyLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyMedium.woff2") format("woff2"), url("../fonts/SVN-GilroyMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyMediumItalic.woff2") format("woff2"), url("../fonts/SVN-GilroyMediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-Gilroy.woff2") format("woff2"), url("../fonts/SVN-Gilroy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy XBold";
+  src: url("../fonts/SVN-GilroyXBoldItalic.woff2") format("woff2"), url("../fonts/SVN-GilroyXBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyThin.woff2") format("woff2"), url("../fonts/SVN-GilroyThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroySemiBoldItalic.woff2") format("woff2"), url("../fonts/SVN-GilroySemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyThinItalic.woff2") format("woff2"), url("../fonts/SVN-GilroyThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroySemiBold.woff2") format("woff2"), url("../fonts/SVN-GilroySemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy XBold";
+  src: url("../fonts/SVN-GilroyXBold.woff2") format("woff2"), url("../fonts/SVN-GilroyXBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy XLight";
+  src: url("../fonts/SVN-GilroyXLight.woff2") format("woff2"), url("../fonts/SVN-GilroyXLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy XLight";
+  src: url("../fonts/SVN-GilroyXLightItalic.woff2") format("woff2"), url("../fonts/SVN-GilroyXLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+body {
+  font-size: 16px;
+  line-height: 1;
+  background-color: #fff;
+  color: #08332a;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+
+.container {
+  max-width: 1130px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 11px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.btn.btn-primary {
+  font-weight: 600;
+  color: #fff;
+  background-color: #08332a;
+}
+.btn.btn-primary:hover {
+  transform: translateY(-6px);
+  background-color: #b88a2d;
+  color: #08332a;
+}
+
+.header {
+  padding: 16px 0;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_logo h1 a {
+  text-decoration: none;
+  color: #08332a;
+  text-transform: uppercase;
+  font-family: "Bodoni";
+  font-size: 26px;
+  font-weight: 400;
+}
+.header_menu .menu {
+  display: flex;
+  gap: 20px;
+}
+.header_menu .menu_item {
+  list-style: none;
+}
+.header_menu .menu_item.active .menu_link {
+  color: #b88a2d !important;
+}
+.header_menu .menu_item:hover .menu_link {
+  color: #b88a2d;
+}
+.header_menu .menu_link {
+  text-decoration: none;
+  color: #08332a;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 14px 12px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+.header_menu .menu_link i {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.banner {
+  position: relative;
+}
+.banner_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner_button {
+  position: absolute;
+  right: 18.7%;
+  bottom: 17%;
+}
+
+/*# sourceMappingURL=style.css.map */
