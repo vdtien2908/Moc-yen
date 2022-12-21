@@ -206,7 +206,7 @@ body {
 }
 
 .btn {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   cursor: pointer;
   padding: 11px 16px;
@@ -224,9 +224,15 @@ body {
   background-color: #b88a2d;
   color: #08332a;
 }
+.btn.btn-primary--noAction {
+  font-weight: 600;
+  color: #fff;
+  background-color: #08332a;
+}
 
 .header {
   padding: 16px 0;
+  background-color: #fff;
 }
 .header_container {
   display: flex;
@@ -272,6 +278,8 @@ body {
 
 .banner {
   position: relative;
+  background-color: #fff;
+  padding-bottom: 40px;
 }
 .banner_img img {
   width: 100%;
@@ -282,6 +290,122 @@ body {
   position: absolute;
   right: 18.7%;
   bottom: 17%;
+}
+
+.about-us {
+  background-color: #fff;
+  padding-bottom: 120px;
+}
+.about-us_container {
+  display: flex;
+  gap: 20px;
+}
+.about-us_container .about-us_content {
+  width: 45%;
+}
+.about-us_container .about-us_content .about-us_title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+.about-us_container .about-us_content .about-us_title b {
+  font-weight: 700;
+}
+.about-us_container .about-us_content .about-us_desc {
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: justify;
+  margin-top: 12px;
+  padding-right: 40px;
+}
+.about-us_container .about-us_content .about-us_link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-top: 8px;
+}
+.about-us_container .about-us_content .about-us_link i {
+  font-size: 12px;
+  margin-left: 2px;
+}
+.about-us_container .about-us_img {
+  width: 55%;
+}
+.about-us_container .about-us_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-new_container {
+  background-color: #c3922c;
+  border-radius: 40px;
+  padding: 20px 120px 16px 120px;
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  margin: 0 auto;
+}
+.product-new_container .product-new_title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-family: "Bodoni";
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+}
+.product-new_container .product-new_main {
+  display: flex;
+  gap: 40px;
+}
+.product-new_container .product-new_content {
+  width: 70%;
+  margin-top: 20px;
+}
+.product-new_container .product-new_content .product-new_name {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.product-new_container .product-new_content .product-new_desc {
+  color: #000;
+  text-align: justify;
+  font-size: 16px;
+  padding-right: 60px;
+  line-height: 1.3;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.product-new_container .product-new_content .product-new_price {
+  margin-bottom: 14px;
+  font-weight: 600;
+  position: relative;
+}
+.product-new_container .product-new_content .product-new_price b {
+  position: absolute;
+  font-size: 12px;
+  margin-left: 2px;
+}
+.product-new_container .product-new_img {
+  width: 30%;
+}
+.product-new_container .product-new_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product {
+  background-color: #08332a;
+  min-height: 100vh;
+  clip-path: ellipse(90% 100% at bottom);
+  margin-top: -143.5px;
 }
 
 /*# sourceMappingURL=style.css.map */
