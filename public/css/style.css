@@ -294,7 +294,7 @@ body {
 
 .about-us {
   background-color: #fff;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
 }
 .about-us_container {
   display: flex;
@@ -304,7 +304,7 @@ body {
   width: 45%;
 }
 .about-us_container .about-us_content .about-us_title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.5;
   text-transform: uppercase;
@@ -342,24 +342,24 @@ body {
 .product-new_container {
   background-color: #c3922c;
   border-radius: 40px;
-  padding: 20px 120px 16px 120px;
+  padding: 20px 120px 20px 120px;
   position: relative;
   z-index: 1;
   width: 85%;
   margin: 0 auto;
 }
 .product-new_container .product-new_title {
-  font-size: 24px;
+  font-size: 28px;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
   font-family: "Bodoni";
   margin-bottom: 20px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
 }
 .product-new_container .product-new_main {
   display: flex;
-  gap: 40px;
+  gap: 80px;
 }
 .product-new_container .product-new_content {
   width: 70%;
@@ -367,23 +367,25 @@ body {
 }
 .product-new_container .product-new_content .product-new_name {
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.4;
   margin-bottom: 12px;
   font-weight: 600;
   text-transform: capitalize;
+  letter-spacing: 0.2px;
 }
 .product-new_container .product-new_content .product-new_desc {
   color: #000;
   text-align: justify;
-  font-size: 16px;
-  padding-right: 60px;
+  font-size: 18px;
+  padding-right: 20px;
   line-height: 1.3;
   margin-bottom: 14px;
   font-weight: 500;
+  opacity: 0.7;
 }
 .product-new_container .product-new_content .product-new_price {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   font-weight: 600;
   position: relative;
 }
@@ -394,18 +396,131 @@ body {
 }
 .product-new_container .product-new_img {
   width: 30%;
+  position: relative;
 }
 .product-new_container .product-new_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.product-new_container .product-new_img:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  left: 0;
+  bottom: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 
 .product {
   background-color: #08332a;
-  min-height: 100vh;
-  clip-path: ellipse(90% 100% at bottom);
-  margin-top: -143.5px;
+  clip-path: ellipse(120% 100% at bottom);
+  margin-top: -170px;
+  padding-bottom: 20px;
+}
+.product_container {
+  padding-top: 206px;
+  color: #fff;
+}
+.product_container .product_top {
+  text-align: center;
+}
+.product_container .product_top .product_title {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-family: "Bodoni";
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+.product_container .product_top .product_tag {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+.product_container .product_top .product_tag::after {
+  content: " ";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 2px;
+  background-color: #849995;
+}
+.product_container .product_main {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 90px;
+}
+.product_container .product_main .card {
+  padding: 8px;
+  border: 1px solid #fff;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.product_container .product_main .card:hover {
+  transform: translateY(-4px);
+}
+.product_container .product_main .card_img {
+  height: 180px;
+}
+.product_container .product_main .card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product_container .product_main .card_title {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.product_container .product_main .card_price {
+  text-align: center;
+  margin: 14px 0 24px 0;
+  color: #b88a2d;
+  font-weight: 700;
+}
+.product_container .product_main .card_price b {
+  position: absolute;
+  font-size: 12px;
+  margin-left: 2px;
+}
+.product_container .product_main .card_link {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+  display: inline-block;
+  background-color: #b88a2d;
+  padding: 6px 8px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+.product_container .product_bottom {
+  margin-top: 80px;
+  text-align: center;
+}
+.product_container .product_bottom a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+.product_container .product_bottom a i {
+  font-size: 12px;
+  margin-left: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
