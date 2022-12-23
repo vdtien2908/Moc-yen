@@ -44,6 +44,15 @@
 
         .about-us_img {
             width: 55%;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                z-index: 1;
+                background-color: rgba(0, 0, 0, 0.15);
+            }
 
             img {
                 width: 100%;

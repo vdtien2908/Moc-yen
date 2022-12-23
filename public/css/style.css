@@ -230,6 +230,14 @@ body {
   background-color: #08332a;
 }
 
+.width-30 {
+  width: 30%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
 .header {
   padding: 16px 0;
   background-color: #fff;
@@ -332,6 +340,14 @@ body {
 }
 .about-us_container .about-us_img {
   width: 55%;
+  position: relative;
+}
+.about-us_container .about-us_img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 .about-us_container .about-us_img img {
   width: 100%;
@@ -441,6 +457,7 @@ body {
   font-weight: 600;
   position: relative;
   display: inline-block;
+  letter-spacing: 0.5px;
 }
 .product_container .product_top .product_tag::after {
   content: " ";
@@ -521,6 +538,89 @@ body {
 .product_container .product_bottom a i {
   font-size: 12px;
   margin-left: 4px;
+}
+
+.achievement {
+  background-color: #062820;
+  padding: 30px 0 50px 0;
+}
+.achievement_container {
+  display: flex;
+}
+.achievement_item {
+  padding: 0 15px;
+  color: #fff;
+}
+.achievement_item:first-child {
+  padding-left: 0;
+}
+.achievement_item:last-child {
+  padding-right: 0;
+}
+.achievement_img {
+  height: 300px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.achievement_img:hover ul {
+  transform: translateY(0);
+}
+.achievement_img ul {
+  position: absolute;
+  inset: 0;
+  padding: 24px 36px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: all 0.5s ease;
+  transform: translateY(100%);
+}
+.achievement_img ul li {
+  list-style: none;
+  text-transform: capitalize;
+}
+.achievement_img ul li:not(last-child) {
+  margin-bottom: 10px;
+}
+.achievement_img ul li i {
+  font-size: 14px;
+  margin-right: 4px;
+}
+.achievement_img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  opacity: 0.4;
+}
+.achievement_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.achievement_item:not(:last-child) .achievement_content {
+  border-right: 1px solid #c3922c;
+}
+.achievement_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0 0 -15px;
+  margin-right: -15px;
+}
+.achievement_content i {
+  font-size: 36px;
+  color: #c3922c;
+}
+.achievement_content p {
+  margin-left: 20px;
+  line-height: 1;
+  font-size: 24px;
+}
+.achievement_content p b {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
