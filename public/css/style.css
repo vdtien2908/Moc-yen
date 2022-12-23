@@ -591,7 +591,7 @@ body {
   position: absolute;
   inset: 0;
   background-color: #000;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 .achievement_img img {
   width: 100%;
@@ -621,6 +621,177 @@ body {
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 600;
+}
+
+.undervest {
+  display: flex;
+  overflow: hidden;
+}
+.undervest_left {
+  height: 400px;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+.undervest_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.undervest_right {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  background-color: #9c4623;
+  box-shadow: rgba(156, 70, 35, 0.95) -25px 25px 35px -15px, rgba(156, 70, 35, 0.95) -25px 35px 35px -15px, rgba(156, 70, 35, 0.95) -25px 35px 35px -15px, rgba(156, 70, 35, 0.95) -25px -25px 35px -15px, rgba(156, 70, 35, 0.95) -25px -35px 35px -15px, rgba(156, 70, 35, 0.95) -25px -35px 35px -15px;
+}
+.undervest_right .undervest_box {
+  padding: 40px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #062820;
+  border-radius: 20px;
+}
+.undervest_right .undervest_box .undervest-box_top {
+  display: flex;
+  justify-content: space-between;
+}
+.undervest_right .undervest_box .undervest-box_top .undervest_user {
+  display: flex;
+  gap: 20px;
+}
+.undervest_right .undervest_box .undervest-box_top .undervest_user .user_img {
+  width: 60px;
+  height: 60px;
+}
+.undervest_right .undervest_box .undervest-box_top .undervest_user .user_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.undervest_right .undervest_box .undervest-box_top .undervest_user .user_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.undervest_right .undervest_box .undervest-box_top .undervest_user .user_info .user_name {
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 700;
+}
+.undervest_right .undervest_box .undervest-box_top .undervest_user .user_info .user_position {
+  color: #b88a2d;
+  margin-bottom: 4px;
+}
+.undervest_right .undervest_box .undervest-box_top i {
+  font-size: 60px;
+  color: #b88a2d;
+}
+.undervest_right .undervest_bottonSlider {
+  position: absolute;
+  bottom: 24%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.undervest_right .undervest_bottonSlider .btnSlide {
+  padding: 8px;
+  border: 1px solid #b88a2d;
+  display: inline-block;
+}
+.undervest_right .undervest_bottonSlider .btnSlide.active {
+  border: none;
+  background-color: #b88a2d;
+}
+.undervest_right .undervest-box_bottom {
+  color: #fff;
+  margin-top: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #08332a;
+  padding: 30px 0;
+}
+.footer_top .footer_logo {
+  width: 80px;
+  margin: 0 auto;
+}
+.footer_top .footer_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer_top p {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.4;
+  font-size: 18px;
+}
+.footer_main {
+  margin-top: 60px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_main .footer_item p {
+  color: #b88a2d;
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer_main .footer_item ul {
+  margin-top: 20px;
+}
+.footer_main .footer_item ul li {
+  list-style: none;
+}
+.footer_main .footer_item ul li:hover a {
+  color: #b88a2d;
+}
+.footer_main .footer_item ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 4px 0;
+  transition: all 0.3s ease;
+}
+.footer_bottom {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.footer_bottom:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer_bottom ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.footer_bottom ul li {
+  list-style: none;
+}
+.footer_bottom ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer_bottom ul li a i {
+  font-size: 40px;
+}
+.footer_bottom ul li a img {
+  width: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
