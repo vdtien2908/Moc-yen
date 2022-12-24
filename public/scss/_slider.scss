@@ -1,0 +1,82 @@
+.slides {
+    display: flex;
+    width: 500%;
+
+    input {
+        display: none;
+    }
+
+    .slide {
+        width: 20%;
+        transition: 2s;
+        padding: 40px;
+    }
+}
+.navigation-manual {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: calc(100% + 34px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    .manual-btn {
+        cursor: pointer;
+        padding: 8px;
+        border: 1px solid $color-active;
+        display: inline-block;
+        transition: all 0.3s ease;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &:hover {
+            background-color: $color-active;
+        }
+    }
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: calc(100% + 34px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    div {
+        padding: 8px;
+        border: 1px solid $color-active;
+        display: inline-block;
+        transition: 1s;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: $color-active;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: $color-active;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: $color-active;
+}

@@ -26,12 +26,19 @@
             rgb(156, 70, 35, 0.95) -25px -35px 35px -15px,
             rgb(156, 70, 35, 0.95) -25px -35px 35px -15px;
 
+        .undervest-right_container {
+            position: relative;
+            width: 70%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
         .undervest_box {
-            padding: 40px;
             position: absolute;
             top: 40%;
             left: 50%;
-            width: 70%;
+            width: 100%;
             transform: translate(-50%, -50%);
             background-color: #062820;
             border-radius: 20px;
@@ -76,24 +83,6 @@
                 i {
                     font-size: 60px;
                     color: $color-active;
-                }
-            }
-        }
-
-        .undervest_bottonSlider {
-            position: absolute;
-            bottom: 24%;
-            left: 50%;
-            transform: translateX(-50%);
-
-            .btnSlide {
-                padding: 8px;
-                border: 1px solid $color-active;
-                display: inline-block;
-
-                &.active {
-                    border: none;
-                    background-color: $color-active;
                 }
             }
         }
