@@ -4,7 +4,7 @@
 
     &_left {
         height: 400px;
-        width: 50%;
+        width: 40%;
         position: relative;
         z-index: 1;
         img {
@@ -17,7 +17,7 @@
     &_right {
         position: relative;
         z-index: 2;
-        width: 50%;
+        width: 60%;
         background-color: #9c4623;
         box-shadow: rgb(156, 70, 35, 0.95) -25px 25px 35px -15px,
             rgb(156, 70, 35, 0.95) -25px 35px 35px -15px,
@@ -36,7 +36,7 @@
 
         .undervest_box {
             position: absolute;
-            top: 40%;
+            top: 50%;
             left: 50%;
             width: 100%;
             transform: translate(-50%, -50%);
